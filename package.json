@@ -1,0 +1,35 @@
+{
+  "name": "lm-admin-automation",
+  "version": "1.0.0",
+  "description": "This README would normally document whatever steps are necessary to get your application up and running.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run",
+    "lubemobile": "npx cypress open --env ENV=lubemobile --config baseUrl=https://lmadmin-uat.wrench.com/",
+    "wrench": "npx cypress open --env ENV=wrench --config baseUrl=https://adminuat.wrench.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/lunchclub/lm-admin-automation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://bitbucket.org/lunchclub/lm-admin-automation/issues"
+  },
+  "homepage": "https://bitbucket.org/lunchclub/lm-admin-automation#readme",
+  "devDependencies": {
+    "@cypress/grep": "^3.1.5",
+    "@shelex/cypress-allure-plugin": "^2.34.0",
+    "mocha-allure-reporter": "^1.4.0",
+    "mocha-junit-reporter": "^2.0.2",
+    "mocha-multi-reporters": "^1.5.1",
+    "mysql": "^2.18.1",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "cypress": "^12.0.0",
+    "faker": "^5.5.3"
+  }
+}
