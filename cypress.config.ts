@@ -38,7 +38,7 @@ export default defineConfig({
   },
   e2e: {
     experimentalStudio: true,
-    baseUrl: 'https://uat.wrench.com/',
+    baseUrl: 'https://uat.startk.com/',
     setupNodeEvents(on, config) {
       on('task', {
         queryDb: ({ dbName, query}) => {
