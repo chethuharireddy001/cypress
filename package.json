@@ -5,20 +5,20 @@
   "main": "index.js",
   "scripts": {
     "test": "npx cypress run",
-    "lubemobile": "npx cypress open --env ENV=lubemobile --config baseUrl=https://lmadmin-uat.wrench.com/",
-    "wrench": "npx cypress open --env ENV=wrench --config baseUrl=https://adminuat.wrench.com/"
+    "lubemobile": "npx cypress open --env ENV=lubemobile --config baseUrl=https://lmadmin-uat.stark.com/",
+    "wrench": "npx cypress open --env ENV=wrench --config baseUrl=https://adminuat.stark.com/"
   },
   "repository": {
-    "type": "git",
-    "url": "git+ssh://git@bitbucket.org/lunchclub/lm-admin-automation.git"
+
+ 
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://bitbucket.org/lunchclub/lm-admin-automation/issues"
+
   },
-  "homepage": "https://bitbucket.org/lunchclub/lm-admin-automation#readme",
+
   "devDependencies": {
     "@cypress/grep": "^3.1.5",
     "@shelex/cypress-allure-plugin": "^2.34.0",

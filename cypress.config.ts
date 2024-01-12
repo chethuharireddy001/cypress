@@ -1,20 +1,4 @@
-import { defineConfig } from 'cypress';
-import mysql from 'mysql';
 
-const connections = {
-  wrenchDb: {
-    host: "wrench-uat.cluster-cc8bg1samc0b.us-west-2.rds.amazonaws.com",
-    user: "wrench",
-    password: 'rds4Wr3nch!',
-    database: "wrench"
-  },
-  lmDb: {
-    host: 'lubemobile-uat.cm1bv1m4z1yi.ap-southeast-2.rds.amazonaws.com',
-    user: 'wrench_readwrite',
-    password: 'Wr3nch!',
-    database: 'wrench',
-  }
-}
 
 function queryTestDb(connectInfo, query) {
   const connection = mysql.createConnection(connectInfo)
@@ -47,13 +31,6 @@ export default defineConfig({
     openMode: 0,
   },
   env: {
-    wrenchAdminUrl: 'https://adminuat.wrench.com/',
-    wrenchWebAppUrl: 'https://uat.wrench.com/',
-    lmWebAppUrl: 'https://lmuat.wrench.com/',
-    lubeMobile: "https://lmadmin-uat.wrench.com/",
-    localJsAdminBaseUrl: "http://localhost:8888/#/",
-    localWebappBaseUrl: "http://localhost:4200/",
-    goToJob: '#/update_job?jobId=',
     loginPage: "/ng/login",
     legacyLoginPage: "/#/login",
     grepFilterSpecs: true,
